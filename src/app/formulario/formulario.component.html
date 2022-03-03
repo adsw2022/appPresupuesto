@@ -12,14 +12,16 @@
         placeholder="Agregar Descripción"
         name="descripcionInput"
         [(ngModel)]="descripcionInput"
+        required
       />
       <input [ngClass]="{redfocus:tipo==='Egreso'}" type="number" 
       class="agregar_valor" 
       placeholder="Valor" 
       name="valorInput"
         [(ngModel)]="valorInput"
+        required
       />
-      <button class="agregar_btn" type="submit" (click)="agregarValor()">
+      <button class="agregar_btn" type="submit">
         <i class="ion-ios-checkmark-outline" [ngClass]="{red:tipo==='Egreso'}"></i>
       </button>
     </div>
